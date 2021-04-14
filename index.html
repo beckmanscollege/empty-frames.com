@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>CSS 3d rotating image gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/reveal.css" />
+    <script src="js/script.js" defer></script>
+    <script src="js/reveal.js" defer></script>
+  </head>
+
+ 
+
+  <body>
+        <style>
+/* Flashlight Overlay */
+:root {
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 25vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,0) 80%,
+    rgba(0,0,0,1) 100%
+  )
+}
+       </style>
+    
+    
+    
+    
+    
+    <div id="mouse-circle"></div>
+    <div class="container1">
+      
+      <div class="box">
+        The Isabella <br />Stewart Gardner <br />Museum Heist
+      </div>
+      <div class="linje"></div>
+
+
+      <div style="clear:both;"></div>
+
+      <div class="text1">
+        <button onclick="scroll1()" id="klicka">
+          CLICK HERE TO FIND OUT ABOUT THE WORLDS BIGGEST ART HEIST</button
+        ><br /><br />
+      </div>
+    </div>
+
+    <div class="container2">
+     
+      <div class="enram">
+        <p id="testar">
+          On March 18, 1990, 13 works of art were stolen from the Isabella
+          Stewart Gardner Museum in Boston.
+          
+                    Two men in police uniforms pushed the Museum buzzer, stated they were responding to a disturbance, and requested to be let in. The guard on duty broke protocol and allowed them through the employee entrance. At the fake officers’ request he stepped away from the watch desk. He and a second security guard were handcuffed and tied up in the basement of the Museum.
+
+          
+          The haul is valued at $500 million and no arrests have been made. No
+          works have been recovered. The museum is offering a $10 million reward
+          for information leading to the art's recovery.
+        </p>
+       
+        <div id="ramen">
+          <img
+            src="https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2FRAMM.png?v=1618155420460"
+          />
+          <div id="poliserna">
+          <img
+            src="https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2Fpoliserna.png?v=1618155000969"
+          />
+        </div>
+      </div>
+
+      
+      </div>
+
+    
+
+     
+
+      <div class="klicka2">
+        <button onclick="scroll2()" id="klickaknapp2">
+          THE MISSING PIECES</button
+        ><br /><br />
+      </div>
+    </div>
+
+    <div class="container3">      <div id="foreground"></div>
+      <div id="background"></div></div>
+
+    <div class="container4">
+
+    </div>
+
+    <script>
+      function scroll1() {
+        window.scrollTo(0, 843);
+      }
+    </script>
+
+    <script>
+      function scroll2() {
+        window.scrollTo(845, 1650);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2FVoyage-Regular.ttf?v=1617805272092);
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url(https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2FBon%20Vivant%20Serif%20Bold.otf?v=1617807393903);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sixing: border-box;
+  background: black;
+  scroll-behavior: smooth;
+}
+
+/*RING CURSOR*/
+#mouse-circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: -12px 20px 0 -22px;
+  border: 2.5px solid #efebe8;
+  border-radius: 50%;
+  pointer-events: none;
+  background: transparent;
+}
+
+/*FÖRSTA SIDAN*/
+
+div.container1 {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+ 
+}
+
+div.text1 {
+  width: 200px;
+  height: 100px;
+  margin-left: 75%;
+  border: 1px solid black;
+  font-family: mySecondFont;
+  font-size: 20px;
+  text-align: center;
+  animation: fadein 8s linear;
+}
+
+@keyframes fadein {
+  0% {
+    color: #efebe8;
+  }
+  100% {
+    color: black;
+  }
+}
+
+#klicka {
+  box-sixing: border-box;
+  font-family: MySecondFont;
+  color: black;
+  border: transparent;
+  margin-top: -250px;
+  margin-right: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  animation: animeraklick 5s linear;
+  animation-fill-mode: forwards;
+    border: 1px solid white;
+    outline: none;
+
+}
+
+@keyframes animeraklick {
+  0% {
+    opacity: 0; color: black;
+  }
+  75% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1; color: white;
+  }
+}
+
+div.box {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  float: left;
+  font-family: myFirstFont;
+  color: #efebe8;
+  padding-left: 5vh;
+  font-size: 12vw;
+  text-align: left;
+  padding-top: 10vh;
+  line-height: 0.9;
+  background-image: url(https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2F28subKEATS-superJumbo.jpg?v=1618146623256);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/*ANDRA SIDAN */
+
+div.container2 {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#testar {
+  font-family: myFirstFont;
+  color: #efebe8;
+  z-index: 10;
+  display: inline-block;
+  width: 470px;
+  height: 100px;
+  position: absolute;
+  font-size: 28px;
+  text-align: center;
+  margin-left: 33%;
+  margin-top: 9.5%;
+}
+
+#ramen img {
+  position: absolute;
+  display: inline-block;
+  width: 700px;
+  margin-top: 3%;
+  margin-left: 25%;
+}
+
+#polistext {
+  font-family: myFirstFont;
+  color: #efebe8;
+  z-index: 10;
+  display: inline-block;
+  width: 465px;
+  height: 200px;
+  position: absolute;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 33%;
+  margin-top: 19%;
+  background-color: transparent;
+}
+
+#poliserna img {
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  margin-top: 37%;
+  margin-left: 76%;
+  background-color: transparent;
+}
+
+
+
+#pengatext {
+  font-family: myFirstFont;
+  color: #efebe8;
+  z-index: 10;
+  display: inline-block;
+  width: 210px;
+  height: 100px;
+  position: absolute;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 74%;
+  margin-top: 20%;
+  background-color: transparent;
+}
+
+#enram {
+  background-image: url(https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2FRAMEN.png?v=1618155746397);
+  background-size: 60%;
+  margin-left: 10%;
+  margin-top: -30%;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  transform: rotate(90deg);
+}
+
+#klickaknapp2 {
+  box-sixing: border-box;
+  font-family: MySecondFont;
+  color: orange;
+  border: transparent;
+  font-size: 20px;
+  margin-left: 80%;
+  margin-top: 51%;
+  cursor: pointer;
+  background-color: transparent;
+  animation: animeraklick2 1s linear infinite alternate;
+  display: inline-block;
+  border: none;
+      outline: none;
+
+}
+
+@keyframes animeraklick2 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+/*TREDJE SIDAN*/
+
+div.container3 {
+  width: 100vw;
+  height: 100vh;
+ 
+}
+
+
+/*SIDA FYRA*/
+
+div.container4 {
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid black;
+  overflow: hidden;
+}
+
+
