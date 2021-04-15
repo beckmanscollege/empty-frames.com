@@ -1,49 +1,41 @@
 <html>
   <head>
-    <title>CSS 3d rotating image gallery</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/reveal.css" />
-    <script src="js/script.js" defer></script>
-    <script src="js/reveal.js" defer></script>
+    <title>emptyframes</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="reveal.css" />
+    <script src="script.js" defer></script>
+    <script src="reveal.js" defer></script>
   </head>
 
- 
-
   <body>
-        <style>
-/* Flashlight Overlay */
-:root {
-  --cursorX: 50vw;
-  --cursorY: 50vh;
-}
-:root:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  pointer-events: none;
-  background: radial-gradient(
-    circle 25vmax at var(--cursorX) var(--cursorY),
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,0) 80%,
-    rgba(0,0,0,1) 100%
-  )
-}
-       </style>
-    
-    
-    
-    
-    
+    <style>
+      /* Flashlight Overlay */
+      :root {
+        --cursorX: 50vw;
+        --cursorY: 50vh;
+      }
+      :root:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        pointer-events: none;
+        background: radial-gradient(
+          circle 25vmax at var(--cursorX) var(--cursorY),
+          rgba(0,0,0,0) 0%,
+          rgba(0,0,0,0) 80%,
+          rgba(0,0,0,1) 100%
+        )
+      }
+    </style>
+
     <div id="mouse-circle"></div>
+
     <div class="container1">
-      
-      <div class="box">
+      <div class="first">
         The Isabella <br />Stewart Gardner <br />Museum Heist
       </div>
-      <div class="linje"></div>
-
 
       <div style="clear:both;"></div>
 
@@ -55,37 +47,37 @@
     </div>
 
     <div class="container2">
-     
-      <div class="enram">
-        <p id="testar">
-          On March 18, 1990, 13 works of art were stolen from the Isabella
-          Stewart Gardner Museum in Boston.
-          
-                    Two men in police uniforms pushed the Museum buzzer, stated they were responding to a disturbance, and requested to be let in. The guard on duty broke protocol and allowed them through the employee entrance. At the fake officers’ request he stepped away from the watch desk. He and a second security guard were handcuffed and tied up in the basement of the Museum.
-
-          
-          The haul is valued at $500 million and no arrests have been made. No
-          works have been recovered. The museum is offering a $10 million reward
-          for information leading to the art's recovery.
-        </p>
-       
-        <div id="ramen">
-          <img
-            src="https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2FRAMM.png?v=1618155420460"
-          />
-          <div id="poliserna">
-          <img
-            src="https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2Fpoliserna.png?v=1618155000969"
-          />
-        </div>
-      </div>
-
-      
-      </div>
-
+   
+     <div class="polispolis">
+       <div id="polisbild">
+         <img src="https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2Fpoliserna.png?v=1618155000969" width="200">
+       </div>
+      </div>  
     
+      
+      <div class="second">
+        <p id="massatext">
+          
+          On March 18, 1990, 13 works of art were stolen from the Isabella
+          Stewart Gardner Museum in Boston. Two men in police uniforms pushed
+          the Museum buzzer, stated they were responding to a disturbance, and
+          requested to be let in. The guard on duty broke protocol and allowed
+          them through the employee entrance. At the fake officers’ request he
+          stepped away from the watch desk. He and a second security guard were
+          handcuffed and tied up in the basement of the Museum. The haul is
+          valued at $500 million and no arrests have been made. No works have
+          been recovered. The museum is offering a $10 million reward for
+          information leading to the art's recovery.
+                          </p>        
+              </div>
+      
+<div class="ramen">
+          <div class="ramensbild">
+              <img src="https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2FRAMEN.png?v=1618155746397">
+          </div>
+      </div>
+      
 
-     
 
       <div class="klicka2">
         <button onclick="scroll2()" id="klickaknapp2">
@@ -94,22 +86,46 @@
       </div>
     </div>
 
-    <div class="container3">      <div id="foreground"></div>
-      <div id="background"></div></div>
+    <div class="container3">
+      <div id="foreground"></div>
+      <div id="background"></div>
+      
+      
+      <div class="klicka3">
+        <button onclick="scroll3()" id="klickaknapp3">
+         WANT TO KNOW MORE? </button
+        ><br /><br />
+      </div>
+    </div>
 
+    
+    
     <div class="container4">
+    
+      
+      <a href="https://www.netflix.com/se/title/81032570" target="_blank">Watch the full story here!</a>
 
+        <a href="#" onmouseover="natureWebringInfo();" onmouseout="natureWebringLogo();" onclick="randomWebringSite();"><img id="natureLogo" src="https://www.worldwidewebring.club/2021/embed/art-webring.svg" width="80" alt="Part of the nature webring"></a>
+
+     
+      
     </div>
 
     <script>
       function scroll1() {
-        window.scrollTo(0, 843);
+        window.scrollTo(0,843);
       }
     </script>
 
     <script>
       function scroll2() {
-        window.scrollTo(845, 1650);
+        window.scrollTo(843, 1650);
+      }
+    </script>
+    
+      <script>
+      function scroll3() {
+        window.scrollTo(1650, 2950);
       }
     </script>
   </body>

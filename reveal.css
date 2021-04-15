@@ -18,18 +18,23 @@
 #foreground {
   background-image: url("https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2FSVART%20TOPP_Rityta%201.png?v=1618392853851");
   background-size: 100%;
+  background-repeat: no-repeat;
   
 }
 
 #background {
   background-image: url("https://cdn.glitch.com/841c3949-0d22-4645-ad1b-f135438c9dfc%2FSVART%20BAKGRUND_Rityta%201.png?v=1618392945666");
   background-size: 100%;
+  background-repeat: no-repeat;
   width: 100%;
   margin: 0;
-  cursor: center;
   -webkit-mask-image: url(https://i.imgur.com/pjs3K9N.png);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 20%;
- 
+  
+
+
   
 }
+
+

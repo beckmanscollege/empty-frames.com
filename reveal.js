@@ -5,13 +5,12 @@ window.onload = function() {
 
   // get the width of the background element
   const width = background.offsetWidth;
-  const top =
+  const height = background.offsetHeight;
     // when the mouse moves…
     document.body.addEventListener("mousemove", function(e) {
       // create variables to store the mouse position
       let posX = e.pageX - width /10;
-
-      let posY = e.pageY - container.offsetTop;
+      let posY = e.pageY - container.offsetTop - width / 10;
 
       // update the mask position
       background.style["-webkit-mask-position-x"] = posX + "px";
